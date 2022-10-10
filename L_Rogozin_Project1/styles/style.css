@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(98, 94, 94);
+
+}
+.row{
+    background-color: white;
+    width: 1440px
+}
+#siteheader,main{
+    padding: 1em
+    width: 80%;
+    max-width: 1440px
+    background-color: #fff;
+    border-radius: 8%
+    align: center;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+.column{
+    flex-direction: column;
+}
+.row > div{
+    padding: 20px;
+    margin: 0px;
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    border: 1px solid lightgrey
+}
+.row{
+    display: flex;
+    border-radius: 10px;
+    width: 1440px;
+    background-color: white;
+    margin: 10px auto;
+    padding:10px
+}
+
+.col-b{
+    width: 200px
+}
+.col-a {
+width: calc(100%-200px);
+}
