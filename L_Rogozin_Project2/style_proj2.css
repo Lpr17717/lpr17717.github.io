@@ -1,35 +1,41 @@
+
+@font-face {
+    font-family: 'Font';
+    src: url(Fonts/JotiOne-Regular.ttf);
+}
+
 #Title{
     padding: 10px;
     text-align: center;
+    font-family: 'Font', sans-serif;
+    font-size: large;
+    color: black;
 }
 
 body{
-    background-color: rgb(214, 206, 206);
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .row{
     background-color: white;
-    width: 1440px
+    width: 1200px
+}
+h2{
+    color: #6B1515;
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-  }
 .column{
     flex-direction: column;
 }
-.row > div{
-    padding: 20px;
-    margin: 0px;
+.row{
+    margin: 0;
     flex: 1;
-    text-align: center;
+    text-align: left;
     background-color: white;
-    border: 1px solid lightgrey
 }
 .row{
     display: flex;
-    border-radius: 10px;
-    width: 1440px;
+    width: 1200px;
     background-color: white;
     margin: 10px auto;
     padding:10px
@@ -43,17 +49,64 @@ width: calc(100%-200px);
 }
 
 nav ul{
-    margin: 20px;
-    padding: 10px;
+    margin: 10px;
+    padding-bottom: 10px;
+    text-decoration-color: white;
+
 }
 nav li{
     list-style-type: none;
     display: inline;
-    padding: 30px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
 }
 nav{
-    background-color: white;
-    margin: auto;
+    background-color: #6B1515;
     text-align: center;
+    padding: 10px;
   }
+  nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px
+  }
+
+#photo1{
+    padding-left: 500px;
+}
+#chevron1{
+    top: 100px;
+    padding-right: 500px;
+    padding-left: 300px;
+}
+#chevron2{
+    position:relative;
+    padding-right: 300px;
+    padding-left: 500px;
+}
+#chevron{
+    position:relative;
+    padding-right: 100px;
+    padding-left: 1300px;
+}
   
+.photo{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+a:link{
+    color: white
+}
+a:visited{
+color: rgb(229, 255, 189);
+}
+.logo{
+    padding: 0;
+}
+hr{
+    background-color: rgb(193, 214, 193);
+    height: 5px;
+    border: 0;
+
+}
