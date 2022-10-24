@@ -97,8 +97,9 @@ nav{
 }
   
 .photo{
-    padding-right: 100px;
-    padding-left: 100px;
+    position:absolute;
+    right: 100px;
+    left: 100px;
 }
 
 a:link{
