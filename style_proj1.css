@@ -1,77 +1,59 @@
+body{
+    background-color: #FDFFE4;
+
+}
+.row{
+    background-color: white;
+    width: 1440px
+}
 #Title{
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px
+}
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border: solid;
+  }
+.column{
+    flex-direction: column;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 10px; color: black;
+  }
+.row > div{
+    padding: 20px;
+    margin: 0px;
+    flex: 1;
+    text-align: center;
+    background-color: white;
+}
+.row{
     display: flex;
     width: 1440px;
-    background-color: #FDFFE4;
+    background-color: white;
     margin: 10px auto;
-    text-align: center;
-    font-size: 19px;
-    font-family: serif;
-  }
-
-.rating {
-    height: 50px;
-    width: 10px;
-    background-color: rgb(150, 147, 147);
-    border: solid;
-    border: 1px;
-    margin-left: 10px; margin-right: 10px;
-  }
-  .box1 {
-  margin-right: 100px;
-  height: 100px;
-  width: 350px;
-  border: 1px solid black; background-color: #00364A;
-  float: inline-end;
+    padding:10px
 }
-.box2 {
-  margin-left: 100px;
-  height: 100px;
-  width: 350px;
-  border: 1px solid black; background-color: #00364A;
-  float: inline-start;
+nav ul{
+  margin: 0;
+  padding: 0;
 }
-.row{
-    padding: 10px;
-    flex: 1px;
-    text-align: left;
-    padding: 20px;
-  }
-.row{
-    display: flex;
-    width: 1450px;
-    background-color: #FDFFE4;
-    margin: 10px auto;
+nav li{
+  list-style-type: none;
+  display: inline;
 }
 
-.body{
-  background-color: #FDFFE4
+nav{
+  background-color: white;
+  margin: auto;
 }
-.photo {
-  padding: 20px;
-}
-h2{
-  padding: 10px;
-  text-size-adjust: 20px;
-  color: #5C0700;
-  font-family: serif;
-}
-p{
-  padding:10px;
-  color: #00364A;
-}
-#circle {
-  width: 20px;
-  height: 20px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background: rgb(23, 23, 41);
-  }
-#circle2 {
-  width: 20px;
-  height: 20px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background: rgb(194, 190, 190);
-}
+
+
+  
