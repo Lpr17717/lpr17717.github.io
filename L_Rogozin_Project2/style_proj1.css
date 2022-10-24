@@ -1,0 +1,59 @@
+body{
+    background-color: #FDFFE4;
+
+}
+.row{
+    background-color: white;
+    width: 1440px
+}
+#Title{
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px
+}
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border: solid;
+  }
+.column{
+    flex-direction: column;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 10px; color: black;
+  }
+.row > div{
+    padding: 20px;
+    margin: 0px;
+    flex: 1;
+    text-align: center;
+    background-color: white;
+}
+.row{
+    display: flex;
+    width: 1440px;
+    background-color: white;
+    margin: 10px auto;
+    padding:10px
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+nav li{
+  list-style-type: none;
+  display: inline;
+}
+
+nav{
+  background-color: white;
+  margin: auto;
+}
+
+
+  
