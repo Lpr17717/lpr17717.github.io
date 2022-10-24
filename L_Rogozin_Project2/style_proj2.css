@@ -1,38 +1,44 @@
+
+@font-face {
+    font-family: 'Font';
+    src: url(Fonts/JotiOne-Regular.ttf);
+}
+
 #Title{
     padding: 10px;
     text-align: center;
+    font-family: 'Font', sans-serif;
+    font-size: x-large;
+    color: black;
 }
 
 body{
-    background-color: rgb(214, 206, 206);
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .row{
     background-color: white;
-    width: 1440px
+    width: 1200px
+}
+h2{
+    color: #6B1515;
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-  }
 .column{
     flex-direction: column;
 }
-.row > div{
-    padding: 20px;
-    margin: 0px;
+.row{
+    margin: 0;
     flex: 1;
-    text-align: center;
+    text-align: left;
     background-color: white;
-    border: 1px solid lightgrey
 }
 .row{
     display: flex;
-    border-radius: 10px;
-    width: 1440px;
+    width: 1200px;
     background-color: white;
     margin: 10px auto;
-    padding:10px
+    padding: 10px
 }
 
 .col-b{
@@ -43,18 +49,25 @@ width: calc(100%-200px);
 }
 
 nav ul{
-    margin: 20px;
-    padding: 10px;
+    margin: 10px;
+    text-decoration-color: white;
+
 }
 nav li{
+    padding: 20px;
+    padding-right: 60px;
     list-style-type: none;
     display: inline;
-    padding: 30px;
+    position: relative;
+    color: white;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
 }
 nav{
-    background-color: white;
-    margin: auto;
+    background-color: #6B1515;
     text-align: center;
+<<<<<<< HEAD
 
   }
 
@@ -62,4 +75,55 @@ nav{
     padding: 500px;
 }
 
+=======
+    padding: 20px;
+  }
+  nav a{
+    color: white;
+    text-decoration: none;
+}
+
+#photo1{
+    position: absolute;
+    top: 300px;
+    left: 490px;
+}
+#chevron1{
+    position:absolute;
+    left: 200px;
+    top: 1100px
+}
+#chevron2{
+    position:absolute;
+    right: 200px;
+    top: 1100px
+}
+#chevron{
+    position:absolute;
+    right: 200px;
+    top: 800px
+}
+>>>>>>> a0cf49e96081dec0b4f1b0a75c95f57b79da489b
   
+.photo{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+a:link{
+    color: rgb(203, 192, 192)
+}
+
+a:visited{
+color: rgb(255, 255, 255);
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+hr{
+    background-color: rgb(223, 223, 223);
+    height: 5px;
+    border: 0;
+}
