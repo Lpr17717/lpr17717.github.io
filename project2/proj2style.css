@@ -1,15 +1,15 @@
 
-@font-face {
-    font-family: 'Font';
-    src: url(Fonts/JotiOne-Regular.ttf);
-}
-
 #Title{
     padding: 10px;
     text-align: center;
     font-family: 'Font', sans-serif;
     font-size: x-large;
     color: black;
+}
+
+@font-face {
+    font-family: 'Font';
+    src: url(Fonts/JotiOne-Regular.ttf);
 }
 
 body{
