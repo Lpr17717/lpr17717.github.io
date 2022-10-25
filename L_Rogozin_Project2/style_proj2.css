@@ -20,6 +20,7 @@ body{
     background-color: white;
     width: 1200px
 }
+
 h2{
     color: #6B1515;
 }
@@ -38,11 +39,11 @@ h2{
     width: 1200px;
     background-color: white;
     margin: 10px auto;
-    padding: 10px
+    padding: 100px
 }
 
 .col-b{
-    width: 200px
+    width: 100px
 }
 .col-a {
 width: calc(100%-200px);
@@ -68,7 +69,13 @@ nav{
     padding: 30px;
     background-color: #6B1515;
     text-align: center;
+    padding: 20px;
+
   }
+  nav a{
+    color: white;
+    text-decoration: none;
+}
 
   nav a{
     color: white;
@@ -102,18 +109,12 @@ nav{
     left: 100px;
 }
 
-a:link{
-    color: rgb(203, 192, 192)
-}
-
-a:visited{
-color: rgb(255, 255, 255);
-}
 .logo{
     position: absolute;
     top: 10px;
     right: 50px;
 }
+
 hr{
     background-color: rgb(223, 223, 223);
     height: 5px;
