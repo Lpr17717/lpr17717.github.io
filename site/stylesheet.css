@@ -1,0 +1,17 @@
+
+/* This media query defines how the page displays beneath a breakpoint */
+@media (max-width: 767px){
+    #toggle-nav{
+      display: block; /* display button beneath breakpoint */
+    }
+    #primary-nav{
+      max-height: 0;
+    }
+    #primary-nav li{
+      display: block;
+    }
+    /* Here, we override the rule when the body has a class of nav-open */
+    body.nav-open #primary-nav{
+      max-height: 400px;
+    }
+  }
