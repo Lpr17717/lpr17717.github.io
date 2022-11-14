@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+    font-family: 'font', sans-serif;
+}
+@font-face {
+    font-family: 'font';
+    src: url(font/Kurale-Regular.ttf)
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
