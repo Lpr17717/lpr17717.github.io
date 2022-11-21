@@ -1,6 +1,7 @@
 h1{
     text-align: center;
     font-family: 'myfont', sans-serif;
+    text-decoration: #0400BD;
 }
 @font-face {
     font-family: 'myfont';
