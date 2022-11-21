@@ -13,7 +13,8 @@ body{
 
 h2{
     color: #000000;
-    text-align: center;
+    text-align: left;
+    padding-left: 200px;
 }
 
 
@@ -64,3 +65,12 @@ hr{
     height: 5px;
     border: 0;
 }
+#image{
+padding-right: 1000px;
+position: relative;
+}
+#image2{
+    padding-left: 800px;
+    padding-right: 100px;
+    position: relative;
+    }
