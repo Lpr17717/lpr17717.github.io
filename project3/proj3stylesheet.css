@@ -66,11 +66,12 @@ hr{
     border: 0;
 }
 #image{
-padding-right: 1000px;
-position: relative;
+    position: absolute;
+    padding-left: 400px;
+    padding-top: 20px;
 }
 #image2{
-    padding-left: 800px;
+    padding-left: 730px;
     padding-right: 100px;
-    position: relative;
+    padding-top: 10px;
     }
