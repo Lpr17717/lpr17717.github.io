@@ -10,6 +10,13 @@ h1{
     src: url(proj4images/Gruppo-Regular.ttf)
 }
 #image{
+    width: 90%;
+    background-image: url(image-with-4-3-aspect-ratio.svg);
+    background-size: cover;
+    height: 40%;
+}
+
+#image2{
     width: 100%;
     background-image: url(image-with-4-3-aspect-ratio.svg);
     background-size: cover;
