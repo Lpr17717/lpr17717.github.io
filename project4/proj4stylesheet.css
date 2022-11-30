@@ -1,5 +1,6 @@
 h1{
     text-align: center;
+    display: relative;
     font-family: 'myfont', sans-serif;
     color: #000000;
 }
@@ -13,45 +14,40 @@ body{
     font-family: sans-serif
 }
 
+.column {
+    display: inline-block;
+
+}
+
 h2{
     color: #000000;
     text-align: center;
     position: relative;
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 10px; color: black;
-    border-radius: 10%;
-  }
-
 .row{
-    margin: 10px;
+    margin: 50px;
     display: flex;
     flex: 1;
     Width: 1200px;
-    text-align: left;
-    margin: 10px auto;
     flex-direction: column;
     background-color: white;
 }
 
-.box{
-border-radius: 100;
-background-color: blueviolet;
+#photo1{
+    min-width: 150px;
+    border-radius: 5%
 }
 
 nav li{
     padding: 10px;
     padding-right: 60px;
-    display: inline;
+    display: inline-block;
     font-size: large;
 }
 nav{
     padding: 10px;
     text-align: center;
-    position: inline;
 }
 
 nav a{
