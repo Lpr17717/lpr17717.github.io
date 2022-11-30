@@ -1,0 +1,86 @@
+h1{
+    text-align: center;
+    display: relative;
+    font-family: 'myfont', sans-serif;
+    color: #000000;
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url(proj4images/Gruppo-Regular.ttf)
+}
+
+#image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 20px;
+}
+
+#image2{
+    width: 100%;
+    height: 40%;
+}
+
+h2{
+    color: #000000;
+    text-align: center;
+    position: relative;
+    font-family: 'font2';
+
+}
+@font-face {
+    font-family: 'font2';
+    src: url(proj4images/PTSans-Regular\ 2.ttf)
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .row > div{
+    padding: 40px;
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    border: 1px solid lightgrey
+}
+
+.row{
+    display: flex;
+    border-radius: 40%;
+    width: 1200px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 30px;
+}
+
+#photo1{
+    min-width: 30px;
+    max-width: fit-content;
+}
+
+nav li{
+    padding: 10px;
+    display: inline;
+    font-size: large;
+    flex-direction: column;
+}
+
+nav{
+    padding: 10px;
+    text-align: center;
+    font-family: 'font2';
+}
+
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+p{
+    font-family: 'font2';
+}
+
