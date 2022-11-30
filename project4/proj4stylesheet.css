@@ -24,14 +24,27 @@ h2{
     text-align: center;
     position: relative;
 }
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .row > div{
+    padding: 20px;
+    margin: 0px;
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    border: 1px solid lightgrey
+}
 
 .row{
-    margin: 50px;
     display: flex;
-    flex: 1;
-    Width: 1200px;
-    flex-direction: column;
+    border-radius: 10px;
+    width: 1200px;
     background-color: white;
+    margin: 10px auto;
+    padding:10px
 }
 
 #photo1{
