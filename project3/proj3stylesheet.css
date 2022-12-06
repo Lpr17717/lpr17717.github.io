@@ -8,18 +8,17 @@ h1{
     src: url(font/Kurale-Regular.ttf)
 }
 body{
+    color: #4B0303;
     font-family: serif
 }
 
 h2{
     color: #000000;
-    text-align: left;
-    padding-left: 450px;
+    text-align: right;
+    padding-right: 10em;
 }
 
-
 .row{
-    margin: 10px;
     display: flex;
     flex: 1;
     text-align: left;
@@ -49,7 +48,7 @@ nav{
     text-align: center;
     position: relative;
     background-color: #E5EAFF;
-  }
+}
 
 nav a{
     color: rgb(0, 0, 0);
@@ -66,12 +65,19 @@ hr{
     border: 0;
 }
 #image{
-    position: absolute;
-    padding-left: 400px;
-    padding-top: 20px;
+    position: center;
 }
 #image2{
-    padding-left: 730px;
-    padding-right: 100px;
-    padding-top: 10px;
-    }
+    position: center;
+}
+
+.background-image{
+background-position: top center;
+width: 100%;
+text-align: center;
+}
+
+.background-image{
+background-position: top center;
+width: 100%;
+}
