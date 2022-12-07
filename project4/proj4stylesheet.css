@@ -58,6 +58,16 @@ table {
     max-width: 400px;
 }
 
+.form{
+    display: flex;
+    border-radius: 40%;
+    width: 1200px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 30px;
+    max-width: 400px;
+}
+
 #photo1{
     min-width: 30px;
     max-width: fit-content;
