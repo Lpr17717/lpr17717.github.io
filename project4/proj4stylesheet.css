@@ -28,8 +28,8 @@ h2{
     text-align: center;
     position: relative;
     font-family: 'font2';
-
 }
+
 @font-face {
     font-family: 'font2';
     src: url(proj4images/PTSans-Regular\ 2.ttf)
@@ -55,6 +55,7 @@ table {
     background-color: white;
     margin: 10px auto;
     padding: 30px;
+    max-width: 400px;
 }
 
 #photo1{
