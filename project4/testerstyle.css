@@ -14,7 +14,7 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
     padding: 20px;
 }
 
@@ -22,14 +22,18 @@ h1{
     width: 100%;
     height: 40%;
 }
+#photo1{
+    min-width: 30px;
+    max-width: fit-content;
+}
 
 h2{
     color: #000000;
     text-align: center;
     position: relative;
     font-family: 'font2';
-}
 
+}
 @font-face {
     font-family: 'font2';
     src: url(proj4images/PTSans-Regular\ 2.ttf)
@@ -40,6 +44,15 @@ table {
     border-spacing: 0;
   }
 
+#home{
+    display: flex;
+    border-radius: 40%;
+    width: 1200px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 30px;
+}
+
 #home > div{
     padding: 40px;
     flex: 1;
@@ -48,14 +61,21 @@ table {
     border: 1px solid lightgrey
 }
 
-#home{
+#buy{
     display: flex;
     border-radius: 40%;
     width: 1200px;
     background-color: white;
     margin: 10px auto;
     padding: 30px;
-    max-width: 400px;
+}
+
+#buy > div{
+    padding: 40px;
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    border: 1px solid lightgrey
 }
 
 #about{
@@ -64,11 +84,19 @@ table {
     border-radius: 40%;
     background-color: white;
     margin: 10px auto;
-    width: 600px;
+    width: auto;
     max-width: 700px;
 }
 
-.list{
+#about > div{
+    padding: 40px;
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    border: 1px solid lightgrey
+}
+
+#list{
     display: inline;
     text-align: center;
     border-radius: 40%;
@@ -78,18 +106,31 @@ table {
     max-width: 500px;
 }
 
-
-.form{
-    display: flex;
-    border-radius: 40%;
-    width: 1200px;
-    background-color: white;
-    margin: 10px auto;
-}
-
 #photo1{
     min-width: 30px;
     max-width: fit-content;
+}
+
+p{
+    font-family: 'font2';
+}
+
+form{
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #FFD1D1;
+    padding: 4em;
+    width: 600px;
+    border-radius: 10px;
+}
+
+label,input{
+    width: 100%;
+    align-items: center;
+}
+
+input{
+    border-radius: 10px;
 }
 
 nav li{
@@ -107,79 +148,15 @@ nav{
 
 nav a{
     color: rgb(0, 0, 0);
-    display: inline-block;
     text-decoration: none;
-}
-nav a{
-    background-color: #FFD1D1;
-    border-radius: 5px;
-}
-
-a:hover{
-    text-decoration-line: underline;
-    text-decoration-color: #FFD1D1;
-    text-decoration-thickness: 5px;
+    display: inline-block;
 }
 
 p{
     font-family: 'font2';
 }
 
-form{
-    display: block;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #FFD1D1;
-    padding: 4em;
-    width: 600px;
-    border-radius: 10px;
-
-}
-
-label,input{
-    width: 100%;
-    align-items: center;
-}
-
-input{
-    border-radius: 10px;
-}
-
-#primary-nav{
-    overflow: hidden; /* Overflow hidden ensures that navigation can be hidden */
-    background-color: #ccc;
-    transition: 2s ease-out;
-  }
-  #primary-nav ul{
-    margin: 0;
-    padding: 0;
-  }
-  li{
-    list-style: none;
-    display: inline-block;
-  }
-  #toggle-nav{
-    display: flex;
-  }
-
-  /* This media query defines how the page displays beneath a breakpoint */
-  @media (max-width: 700px){
-    .nav{
-      display: inline-block; /* display button beneath breakpoint */
-    }
-    #nav{
-      max-height: 10px;
-    }
-    #nav li{
-      display: block;
-    }
-    /* Here, we override the rule when the body has a class of nav-open */
-    body.nav-open #primary-nav{
-      max-height: 400px;
-      display: inline-block
-    }
-  }
-
-  .button {
+.button {
     background-color: #ddd;
     border: none;
     color: black;
@@ -209,5 +186,31 @@ input{
     background-color: #f1f1f1;
   }
 
-  
-  
+  .form{
+    display: flex;
+    border-radius: 40%;
+    width: 1200px;
+    background-color: white;
+    margin: 10px auto;
+    }
+    ul{
+    margin: 0;
+    padding: 0;
+    }
+    
+    li{
+        display: inline;
+        padding: 0 20px;
+    }
+    a{
+        display: inline-block;
+        text-transform: none;
+        text-decoration: none;
+    }
+    a div{
+        margin-top: 10px;
+        background-color: pink;
+        height: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
