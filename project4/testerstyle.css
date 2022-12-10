@@ -10,21 +10,9 @@ h1{
     src: url(proj4images/Gruppo-Regular.ttf)
 }
 
-#image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding: 20px;
-}
-
-#image2{
-    width: 100%;
-    height: 40%;
-}
 #photo1{
     min-width: 30px;
-    max-width: fit-content;
+    max-width: 900px;
 }
 
 h2{
@@ -42,6 +30,7 @@ h2{
 table {
     border-collapse: separate;
     border-spacing: 0;
+    max-width: 1200px;
   }
 
 #home{
@@ -51,14 +40,17 @@ table {
     background-color: white;
     margin: 10px auto;
     padding: 30px;
+    max-width: 1200px;
 }
 
 #home > div{
     padding: 40px;
     flex: 1;
+    max-width: 1200px;
     text-align: center;
     background-color: white;
     border: 1px solid lightgrey
+
 }
 
 #buy{
@@ -79,31 +71,23 @@ table {
 }
 
 #about{
-    display: flex;
     text-align: center;
-    border-radius: 40%;
-    background-color: white;
-    margin: 10px auto;
-    width: auto;
+    display: inline-block;
     max-width: 700px;
+    padding-left: 600px;
 }
 
-#about > div{
+#about > li{
+    display: block;
     padding: 40px;
     flex: 1;
-    text-align: center;
-    background-color: white;
-    border: 1px solid lightgrey
 }
 
-#list{
-    display: inline;
+.list{
+    display: flex;
     text-align: center;
-    border-radius: 40%;
     background-color: white;
-    margin: 10px auto;
     font-family: 'font2', sans-serif;
-    max-width: 500px;
 }
 
 #photo1{
@@ -214,3 +198,23 @@ p{
         border-radius: 5px;
         border: 1px solid black;
     }
+
+    #image{
+        display: flex;
+        position: relative;
+        position: calc(100%-0%);
+    }
+    
+    #image2{
+        display: none;
+      }
+
+  @media screen and (max-width: 1400px)
+  {
+    #image{
+        display: none;
+    }
+    #image2{
+      display: block;
+    }
+}
