@@ -50,10 +50,11 @@ table {
 }
 
 #buy{
-display: table;
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 
-#buy > div{
+#buy > .product{
     display: inline-block;
     vertical-align: middle;
     padding: 40px;
@@ -65,12 +66,15 @@ display: table;
 
 .text{
     text-align: center;
+    padding: 40px;
 }
 
 #about{
+    display: block;
     text-align: center;
-    display: inline-block;
-    width: 500px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about > div{
@@ -125,7 +129,7 @@ nav li{
 }
 
 nav{
-    padding: 10px;
+    padding: 40px;
     text-align: center;
     font-family: 'font2';
 }
@@ -231,12 +235,11 @@ p{
       display: block;
     }
 
-    li{
+    nav li{
         display: inline-block;
+        width: calc(50%-40px);
+        padding: 0 20px;
         text-align: center
-        width: calc(50%-42px)
-        padding: 0, 20px;
-        text-align: center;
     }
 
     .form{
@@ -258,6 +261,21 @@ p{
             flex: 1;
             text-align: center;
 
+        }
+        #buy{
+            display: grid;
+            grid-template-columns: 1fr;
+            }
+
+        .text{
+            text-align: center;
+        }
+        #about{
+            display: block;
+            text-align: center;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
 }
