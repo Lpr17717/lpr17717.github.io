@@ -10,6 +10,11 @@ h1{
     src: url(proj4images/Gruppo-Regular.ttf)
 }
 
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+
 #photo1{
     min-width: 30px;
     max-width: 900px;
@@ -27,27 +32,17 @@ h2{
     src: url(proj4images/PTSans-Regular\ 2.ttf)
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-    max-width: 1200px;
-  }
-
 #home{
     display: flex;
     border-radius: 40%;
-    margin: 10px auto;
-    max-width: 1200px;
 }
 
 #home > div{
     padding: 40px;
     flex: 1;
-    max-width: 1200px;
     text-align: center;
-    border-radius: 16px;
-    border: 1px solid lightgrey
 }
+
 
 #buy{
 display: grid;
@@ -60,8 +55,6 @@ grid-template-columns: 1fr 1fr;
     padding: 40px;
     flex: 1;
     text-align: center;
-    border-radius: 16px;
-    border: 1px solid lightgrey
 }
 
 .text{
@@ -72,7 +65,7 @@ grid-template-columns: 1fr 1fr;
 #about{
     display: block;
     text-align: center;
-    width: 700px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -82,7 +75,7 @@ grid-template-columns: 1fr 1fr;
     flex: 1;
 }
 
-.list{
+.aboutlist{
     display: flex;
     text-align: center;
     background-color: white;
@@ -92,20 +85,42 @@ grid-template-columns: 1fr 1fr;
 #photo1{
     min-width: 30px;
     max-width: fit-content;
+    padding: 50px;
+    border-radius: 16px;
+    border: 1px solid lightgrey
 }
 
 p{
     font-family: 'font2';
 }
 
-form{
-    display: block;
+.form{
+    display: flex;
+    margin: auto;
+    text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #FFD1D1;
     padding: 4em;
-    width: 600px;
     border-radius: 16px;
+    }
+
+form{
+margin: auto;
 }
+
+    #password{
+        font-size: x-large;
+    }
+
+    #username{
+        font-size: x-large;
+    }
+
+    #submit{
+        background-color: white;
+        width: 200px;
+        margin: auto;
+    }
 
 #link{
     text-decoration: solid;
@@ -113,8 +128,10 @@ form{
 }
 
 label,input{
-    width: 100%;
-    align-items: center;
+    display: block;
+    width: 1000px;
+    text-align: center;
+    height: 30px;
 }
 
 input{
@@ -161,40 +178,13 @@ p{
     background-color: #f1f1f1;
   }
 
-  .form{
-    display: flex;
-    text-align: center;
-    border-radius: 16px;
-    width: 700px;
-    background-color: white;
-    margin-right: auto;
-    margin-left: auto;
-    }
-
-    #password{
-        font-size: x-large;
-    }
-
-    #username{
-        font-size: x-large;
-        margin-bottom: 10px;
-    }
-
-    #submit{
-        margin-top: 10px;
-        background-color: white;
-        width: 100px;
-    }
-
     ul{
-    margin: 0;
-    padding: 0;
-    }
+    margin: 10px;
+    padding: 10px;
+}
     
     li{
         display: inline-block;
-        width: calc(50%-40px);
-        padding: 0 20px;
         text-align: center;
     }
 
@@ -214,16 +204,16 @@ p{
 
     #image{
         display: flex;
-        position: relative;
+        padding-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
     }
     
     #image2{
         display: none;
+        padding-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
-        width: 1000px;
       }
 
   @media screen and (max-width: 1200px)
@@ -235,47 +225,37 @@ p{
       display: block;
     }
 
-    nav li{
+    li{
         display: inline-block;
-        width: calc(50%-40px);
+        width: calc(50%-40%);
         padding: 0 20px;
-        text-align: center
+    }
+    #home{
+        display: block;
     }
 
-    .form{
-        display: flex;
+    #home > div{
+
+        flex: 1;
         text-align: center;
-        border-radius: 16px;
+
+    }
+    #buy{
+        display: grid;
+        grid-template-columns: 1fr;
+        }
+
+    .text{
+        text-align: center;
+    }
+    #about{
+        display: block;
+        text-align: center;
         width: 500px;
-        background-color: white;
-        margin-right: auto;
-        margin-left: auto;
-        }
 
-        #home{
-            display: block;
-        }
-
-        #home > div{
-
-            flex: 1;
-            text-align: center;
-
-        }
-        #buy{
-            display: grid;
-            grid-template-columns: 1fr;
-            }
-
-        .text{
-            text-align: center;
-        }
-        #about{
-            display: block;
-            text-align: center;
-            width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-}
+    }
+    label,input{
+        width: 500px;
+    }
+       
+    }
