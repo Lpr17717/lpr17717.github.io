@@ -1,18 +1,21 @@
 <link rel="stylesheet" href="testerstyle.css">
 <!doctype html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+<head>
     <title>Apple and Rose Sweets: Login</title>
-
-    <img id="image" src="proj4images/fruitart.svg" alt="fruits and flower graphic" style="max-width: 700px;">
-    <img id="image2" src="proj4images/fruitart2.svg" alt="fruits and flower graphic" style="max-width: 200px;">
-
-    <h1>Apple and Rose Sweets Shop</h1>    
 </head>
+
+<header>
+
+<img id="image" src="proj4images/fruitart.svg" alt="fruits and flower graphic" style="max-width: 700px;">
+<img id="image2" src="proj4images/fruitart2.svg" alt="fruits and flower graphic" style="max-width: 200px;">
+
+<h1>Apple and Rose Sweets Shop</h1>    
+
 
     <nav>
     <ul>
@@ -23,23 +26,26 @@
     </ul>
     </nav>
 
+</header>
 
-<body>
+<main>
 
     <h2>Login</h2>
 
     <div class="form">
                 <form>
                     
-                    <label for="email">Username</label>
+                    <label id="username" for="email">Username</label>
                     <input type="username" id="username" size="30" required>
             
-                    <label for="password">Password</label>
+                    <label id="password" for="password">Password</label>
                     <input name="password" type="password">
-        
-                    <input type="submit" value="Submit">
+
+                    <p><a id="link" href="">Forgot Password?</a></p>
+
+                    <input id="submit" type="submit" value="Submit">
                 </form>
 
-</body>
+</main>
 
 </html>

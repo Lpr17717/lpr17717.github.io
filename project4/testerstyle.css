@@ -36,10 +36,7 @@ table {
 #home{
     display: flex;
     border-radius: 40%;
-    width: 1200px;
-    background-color: white;
     margin: 10px auto;
-    padding: 30px;
     max-width: 1200px;
 }
 
@@ -48,37 +45,35 @@ table {
     flex: 1;
     max-width: 1200px;
     text-align: center;
-    background-color: white;
+    border-radius: 16px;
     border: 1px solid lightgrey
-
 }
 
 #buy{
-    display: flex;
-    border-radius: 40%;
-    width: 1200px;
-    background-color: white;
-    margin: 10px auto;
-    padding: 30px;
+display: table;
 }
 
 #buy > div{
+    display: inline-block;
+    vertical-align: middle;
     padding: 40px;
     flex: 1;
     text-align: center;
-    background-color: white;
+    border-radius: 16px;
     border: 1px solid lightgrey
+}
+
+.text{
+    text-align: center;
 }
 
 #about{
     text-align: center;
     display: inline-block;
-    max-width: 700px;
-    padding-left: 600px;
+    width: 500px;
 }
 
-#about > li{
-    display: block;
+#about > div{
     padding: 40px;
     flex: 1;
 }
@@ -105,7 +100,12 @@ form{
     background-color: #FFD1D1;
     padding: 4em;
     width: 600px;
-    border-radius: 10px;
+    border-radius: 16px;
+}
+
+#link{
+    text-decoration: solid;
+    color: #000000;
 }
 
 label,input{
@@ -114,7 +114,7 @@ label,input{
 }
 
 input{
-    border-radius: 10px;
+    border-radius: 16px;
 }
 
 nav li{
@@ -140,25 +140,12 @@ p{
     font-family: 'font2';
 }
 
-.button {
-    background-color: #ddd;
-    border: none;
-    color: black;
-    padding: 5px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
-    height: 12px;
-  }
-
   .button {
     background-color: #FFD1D1;
+    font-size: medium;
     border: none;
     color: black;
-    padding: 20px 20px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -172,25 +159,47 @@ p{
 
   .form{
     display: flex;
-    border-radius: 40%;
-    width: 1200px;
+    text-align: center;
+    border-radius: 16px;
+    width: 700px;
     background-color: white;
-    margin: 10px auto;
+    margin-right: auto;
+    margin-left: auto;
     }
+
+    #password{
+        font-size: x-large;
+    }
+
+    #username{
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+
+    #submit{
+        margin-top: 10px;
+        background-color: white;
+        width: 100px;
+    }
+
     ul{
     margin: 0;
     padding: 0;
     }
     
     li{
-        display: inline;
+        display: inline-block;
+        width: calc(50%-40px);
         padding: 0 20px;
+        text-align: center;
     }
+
     a{
         display: inline-block;
         text-transform: none;
         text-decoration: none;
     }
+    
     a div{
         margin-top: 10px;
         background-color: pink;
@@ -202,14 +211,18 @@ p{
     #image{
         display: flex;
         position: relative;
-        position: calc(100%-0%);
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #image2{
         display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1000px;
       }
 
-  @media screen and (max-width: 1400px)
+  @media screen and (max-width: 1200px)
   {
     #image{
         display: none;
@@ -217,4 +230,34 @@ p{
     #image2{
       display: block;
     }
+
+    li{
+        display: inline-block;
+        text-align: center
+        width: calc(50%-42px)
+        padding: 0, 20px;
+        text-align: center;
+    }
+
+    .form{
+        display: flex;
+        text-align: center;
+        border-radius: 16px;
+        width: 500px;
+        background-color: white;
+        margin-right: auto;
+        margin-left: auto;
+        }
+
+        #home{
+            display: block;
+        }
+
+        #home > div{
+
+            flex: 1;
+            text-align: center;
+
+        }
+
 }
