@@ -252,11 +252,11 @@ p{
     #about{
         display: block;
         text-align: center;
-        width: 400px;
+        width: 300px;
 
     }
     label,input{
-        width: 300px;
+        width: 200px;
         margin: auto;
     }
     .form{
