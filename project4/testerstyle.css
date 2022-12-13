@@ -252,7 +252,7 @@ p{
     #about{
         display: block;
         text-align: center;
-        width: 500px;
+        width: 400px;
 
     }
     label,input{
@@ -267,7 +267,7 @@ p{
         background-color: #FFD1D1;
         padding: 2em;
         border-radius: 16px;
-        width: 300px;
+        width: 200px;
         }
        
     }
