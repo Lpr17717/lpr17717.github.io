@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project1styles.css">
+<head>
+    <title>Collager: Signup</title>
+    <link rel="icon" type="image/x-icon" href="pro1-imgs/favicon.ico">
+</head>
+
+
+<header>
+    <body>
+        <nav id="primary-nav">
+        <ul>
+          <li><a href="index.html"rel="nav"><img src="pro1-imgs/Collager3.svg" alt=""></a></li>
+          <li><a href="profile.html"rel="nav">Profile</a></li>
+          <li><a href="collages.html"rel="nav">Collages</a></li>
+          <li><a href="create.html"rel="nav">Create</a></li>
+          <li><a href="browse.html"rel="nav">Browse</a></li>
+          <li><a href="logout.html"rel="nav">Logout</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+
+<body>
+    <main>
+        <div class="container2">
+            <div id='profile'><img src="pro1-imgs/face_FILL0_wght400_GRAD0_opsz48.svg" alt=""></div>
+        <div class="container">
+            <ul id="comments">
+                <label for="username">Create Username:</label><br>
+                <input type="text" id="username" name="username" placeholder="Username" required><br>
+                <label for="email">Create Password:</label><br>
+                <input type="text" id="email" name="email" placeholder="Email" required><br>
+                <label for="email">Confirm Password:</label><br>
+                <input type="text" id="email" name="email" placeholder="Email" required><br>
+            </ul>
+            <button class = 'button' href="profile.html"rel="nav">Create Account!</button>
+        </div>
+    </main>
+    <script>
+        document.getElementById('submit').addEventListener('click', function(event){
+            // Prevent form from submitting to action
+            event.preventDefault();
+
+            // Declare variables - both UI elements and form values
+            const commentForm = document.getElementById('comment-form');
+            const Username = commentForm.username.value;
+            const Email = commentForm.email.value;
+
+            // Write to comments list's innerHTML
+
+            // Reset form after submitting
+            commentForm.reset();
+
+        });
+    </script>
+
+</body>
+
+</html>

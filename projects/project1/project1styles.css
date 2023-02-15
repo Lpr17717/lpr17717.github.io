@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'myfont';
+    src: url(fonts/Karma-Regular.ttf)
+}
+
+#profile {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+}
+
+#profile > img{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.button{
+    background-color: #FFFEE6;
+    border: 1px solid #C3D5E2;
+    text-align: center;
+    font-size: large;
+    font-family: 'myfont';
+    padding: 10px;
+    margin: 20px;
+text-decoration: none;
+}
+
+.icons {
+    background-color: #FFFEE6;
+    border: 1px solid #C3D5E2;
+    margin-top: 20px;
+    text-align: center;
+}
+.send {
+    padding-left: 100px;
+    align-items: center;
+    width: 40px;
+}
+.comment{
+    align-items: center;
+    width: 40px;
+}
+
+.like{
+    width: 40px;
+}
+
+.redlike{
+    width: 40px;
+}
+
+
+
+.grid-container {
+    font-family: 'myfont';
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 300px 300px 300px;
+    gap: 70px;
+    justify-content: center;
+}
+  
+.grid-container > div {
+    font-size: 10px;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.grid-container > img{
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid #C3D5E2;
+}
+
+.container3 {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #ffffff;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+  
+  .container3 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border: 1px solid #C3D5E2;
+  }
+
+.item1 {
+grid-area: header; 
+width: 100px;
+}
+.item3 {
+grid-area: main; 
+width: 100px;
+
+}
+.item4 {
+grid-area: right; 
+width: 100px;
+
+}
+.item5 {
+grid-area: footer; 
+height: 70px;
+}
+
+
+.container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .container2 > div {
+    width: 600px;
+    height: 400px;
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #C3D5E2;
+    text-align: center;
+  }
+
+.container{
+    text-align: center;
+}
+
+.pfp{
+    float: inline-start;
+    padding: 10px;
+}
+.usernames {
+    font-size: large;
+}
+
+
+.image{
+    border: 1px solid rgb(129, 126, 126);
+}
+
+h2{
+    text-align: left;
+    font-family: 'myfont';
+    padding-left: 5em;
+
+}
+
+img{
+    padding: 0px;
+    max-width: 130px;
+}
+
+#logo {
+    max-width: 10px;
+    text-align: center;
+    padding-right: 300px;
+}
+
+nav{
+    width: 1100px;
+    margin: 30px;
+    padding: 30px;
+    display: inline-block;
+    border: 1px solid #54FFEB;
+    background-color: white;
+}
+
+nav ul{
+    color: rgb(0, 0, 0);
+    display: inline;
+    text-decoration: none;
+}
+
+nav li{
+    display: inline;
+    font-family: 'myfont';
+    flex: 0;
+}
+
+nav a{
+    margin: 30px;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #9B4848;
+    color: #9B4848;
+}
+
+body{
+    width: 1420px;
+    background-color: #fff4f4;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+div{
+    text-align: center;
+    font-family: 'myfont';
+    align-items: center;
+    place-content: center;
+}
+
+@media (max-width: 700px){
+
+    nav{
+        display: inline-block;
+        border: 1px solid #54FFEB;
+        background-color: white;
+    }
+
+    nav > a{
+        border: 1px solid #54FFEB;
+        background-color: white;
+    }
+
+    body{
+        width: 500px;
+        text-align: center;
+        margin-left: 30px;
+    }
+    
+    body > div{
+        text-align: center;
+    }
+
+    .grid-container {
+        font-family: 'myfont';
+        display: inline-block;
+        grid-template-columns: 300px 300px 300px;
+        gap: 0px;
+        justify-content: center;
+        width: 300px;
+        
+    }
+    
+    nav ul{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        
+    }
+    
+    nav li{
+        font-family: 'myfont';
+        display: flex;
+
+    }
+    
+    nav a{
+        margin: 0px;
+        font-size: large;
+        text-decoration: none;
+        color: black;
+    }
+
+    #primary-nav{
+        display: block;
+        width: 380px;
+        text-align: center;
+    }
+    .container2 {
+        display: inline;
+        grid-template-columns: auto auto auto;
+        padding: 0px;
+        text-align: center;
+      }
+      
+      .container2 > div {
+        width: 400px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #C3D5E2;
+      }
+      .container > div{
+        text-align: center;
+    }
+    .container{
+        margin-left: 30px;
+        width: 450px;
+    }
+
+    .container3 > div {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #C3D5E2
+
+      }
+
+      .container3 {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'menu main main main right right'
+          'menu footer footer footer footer footer';
+        gap: 10px;
+        background-color: #ffffff;
+        margin-left: 300px;
+        margin-right: 300px;
+
+      }
+
+}

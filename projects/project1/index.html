@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project1styles.css">
+<head>
+    <title>Collager: Home</title>
+    <link rel="icon" type="image/x-icon" href="pro1-imgs/favicon.ico">
+</head>
+
+<header>
+    <body>
+        <nav id=primary-nav>
+        <ul>
+        <li><a id="logo" href="index.html"rel="nav"><img src="pro1-imgs/Collager3.svg" alt="Collager Logo"></a></li>
+        <li><a href="profile.html"rel="nav">Profile</a></li>
+        <li><a href="collages.html"rel="nav">Collages</a></li>
+        <li><a href="create.html"rel="nav">Create</a></li>
+        <li><a href="browse.html"rel="nav">Browse</a></li>
+        </ul>
+        </nav>
+        
+</header>
+
+
+<body>
+
+      
+        <div class="container">
+            <h1>Welcome to Collager!</h1>
+            <h4>Dont have an account? <a href="signup.html">Sign up!</a></h4>
+            <ul id="comments">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" placeholder="Username" required><br>
+                <label for="email">Password:</label><br>
+                <input type="text" id="password" name="password" placeholder="Email" required><br>
+            </ul>
+
+            <form id="comment-form" name="comment-form" action="">                
+                <input id="submit" type="submit" value="Submit">
+            </form> 
+
+        </div>
+
+        <script>
+            // Perform this after the window has loaded
+            window.onload = function() {
+              // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+              let toggleNav = document.getElementById('toggle-nav');
+          
+              // Tell button to do something on click
+              toggleNav.addEventListener('click', function(){
+          
+                // toggle the body's class attribute
+                document.body.classList.toggle('nav-open');
+          
+              });
+            };
+            </script>
+    <script>
+        document.getElementById('submit').addEventListener('click', function(event){
+            // Prevent form from submitting to action
+            event.preventDefault();
+
+            // Declare variables - both UI elements and form values
+            const commentForm = document.getElementById('comment-form');
+            const Username = commentForm.username.value;
+            const Password = commentForm.password.value;
+
+            // Write to comments list's innerHTML
+
+            // Reset form after submitting
+            commentForm.reset();
+
+        });
+    </script>
+
+
+</body>
+</html>

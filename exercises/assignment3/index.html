@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Content Form</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <ul id="comments">
+                
+
+            </ul>
+            <hr>
+            <form id="comment-form" name="comment-form" action="">                
+
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" placeholder="Username" required><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" placeholder="Email" required><br>
+                <textarea name="comment" id="comment" cols="30" rows="10" required></textarea><br><br>
+                <input id="submit" type="submit" value="Submit">
+
+              </form> 
+        </div>
+    </main>
+    <script>
+        document.getElementById('submit').addEventListener('click', function(event){
+            // Prevent form from submitting to action
+            event.preventDefault();
+
+            // Declare variables - both UI elements and form values
+            const commentForm = document.getElementById('comment-form');
+            const Username = commentForm.username.value;
+            const Email = commentForm.email.value;
+            const comments = document.getElementById('comments')
+
+            // Write to comments list's innerHTML
+            comments.innerHTML += '<li>Done<li/>'
+
+            // Reset form after submitting
+            commentForm.reset();
+
+        });
+    </script>
+</body>
+</html>
