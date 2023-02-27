@@ -2,8 +2,8 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/assignments/assignment-5',
+  base: '/projects/project-1',
   build: {
-    site: 'http://larissarogozin.com/assignments/assignment-5/',
+    site: 'http://larissarogozin.com/projects/project-1/',
   }
 });
